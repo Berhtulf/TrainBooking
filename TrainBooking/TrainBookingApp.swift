@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TrainBookingApp: App {
+    @StateObject var model = TrainViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
+                .environmentObject(model)
         }
     }
 }

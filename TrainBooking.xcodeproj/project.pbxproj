@@ -11,6 +11,13 @@
 		63727AB8261B2BF90076ABFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727AB7261B2BF90076ABFE /* ContentView.swift */; };
 		63727ABA261B2BFC0076ABFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63727AB9261B2BFC0076ABFE /* Assets.xcassets */; };
 		63727ABD261B2BFC0076ABFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63727ABC261B2BFC0076ABFE /* Preview Assets.xcassets */; };
+		63727AC6261B2FB00076ABFE /* SelectSeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727AC5261B2FB00076ABFE /* SelectSeatView.swift */; };
+		63727ACC261B59D80076ABFE /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727ACB261B59D80076ABFE /* Blur.swift */; };
+		63727ACF261B73800076ABFE /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727ACE261B73800076ABFE /* TicketView.swift */; };
+		63727AD7261CC4590076ABFE /* TrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727AD6261CC4590076ABFE /* TrainViewModel.swift */; };
+		63727ADC261CC5340076ABFE /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727ADB261CC5340076ABFE /* Train.swift */; };
+		63727ADF261CC55B0076ABFE /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727ADE261CC55B0076ABFE /* Row.swift */; };
+		63727AE2261CC56F0076ABFE /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63727AE1261CC56F0076ABFE /* Seat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		63727AB9261B2BFC0076ABFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63727ABC261B2BFC0076ABFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63727ABE261B2BFC0076ABFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63727AC5261B2FB00076ABFE /* SelectSeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatView.swift; sourceTree = "<group>"; };
+		63727ACB261B59D80076ABFE /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		63727ACE261B73800076ABFE /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		63727AD6261CC4590076ABFE /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
+		63727ADB261CC5340076ABFE /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		63727ADE261CC55B0076ABFE /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		63727AE1261CC56F0076ABFE /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +66,14 @@
 		63727AB4261B2BF90076ABFE /* TrainBooking */ = {
 			isa = PBXGroup;
 			children = (
+				63727ADA261CC52C0076ABFE /* Models */,
+				63727AD5261CC44B0076ABFE /* ViewModels */,
+				63727AD3261CC4050076ABFE /* Views */,
 				63727AB5261B2BF90076ABFE /* TrainBookingApp.swift */,
-				63727AB7261B2BF90076ABFE /* ContentView.swift */,
 				63727AB9261B2BFC0076ABFE /* Assets.xcassets */,
 				63727ABE261B2BFC0076ABFE /* Info.plist */,
 				63727ABB261B2BFC0076ABFE /* Preview Content */,
+				63727ACB261B59D80076ABFE /* Blur.swift */,
 			);
 			path = TrainBooking;
 			sourceTree = "<group>";
@@ -67,6 +84,34 @@
 				63727ABC261B2BFC0076ABFE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63727AD3261CC4050076ABFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63727AB7261B2BF90076ABFE /* ContentView.swift */,
+				63727AC5261B2FB00076ABFE /* SelectSeatView.swift */,
+				63727ACE261B73800076ABFE /* TicketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63727AD5261CC44B0076ABFE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				63727AD6261CC4590076ABFE /* TrainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		63727ADA261CC52C0076ABFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63727ADB261CC5340076ABFE /* Train.swift */,
+				63727ADE261CC55B0076ABFE /* Row.swift */,
+				63727AE1261CC56F0076ABFE /* Seat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63727ACF261B73800076ABFE /* TicketView.swift in Sources */,
+				63727ADF261CC55B0076ABFE /* Row.swift in Sources */,
 				63727AB8261B2BF90076ABFE /* ContentView.swift in Sources */,
+				63727AD7261CC4590076ABFE /* TrainViewModel.swift in Sources */,
 				63727AB6261B2BF90076ABFE /* TrainBookingApp.swift in Sources */,
+				63727ACC261B59D80076ABFE /* Blur.swift in Sources */,
+				63727ADC261CC5340076ABFE /* Train.swift in Sources */,
+				63727AE2261CC56F0076ABFE /* Seat.swift in Sources */,
+				63727AC6261B2FB00076ABFE /* SelectSeatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaclavikmartin.TrainBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaclavikmartin.TrainBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
