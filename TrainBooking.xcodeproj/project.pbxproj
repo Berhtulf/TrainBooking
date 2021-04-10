@@ -68,7 +68,6 @@
 		63727AA9261B2BF90076ABFE = {
 			isa = PBXGroup;
 			children = (
-				638385332621B6BB00375B28 /* Styles */,
 				63727AB4261B2BF90076ABFE /* TrainBooking */,
 				63727AB3261B2BF90076ABFE /* Products */,
 			);
@@ -85,6 +84,7 @@
 		63727AB4261B2BF90076ABFE /* TrainBooking */ = {
 			isa = PBXGroup;
 			children = (
+				638385332621B6BB00375B28 /* Styles */,
 				63727ADA261CC52C0076ABFE /* Models */,
 				63727AD5261CC44B0076ABFE /* ViewModels */,
 				63727AD3261CC4050076ABFE /* Views */,
