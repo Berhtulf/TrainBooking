@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Seat : Hashable, Equatable {
+struct Seat : Hashable {
     let rowNumber: Int
     let column: String
     let empty: Bool

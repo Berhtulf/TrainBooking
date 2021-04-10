@@ -17,17 +17,15 @@ class TrainViewModel: ObservableObject {
     @Published var fromStation : String = "Bandung Station"
     @Published var toStation : String = "Semarang Tawang"
 
-    init() {
-        train = generateTrain(rows: 15)
+    init(rows: Int = 15) {
+        train = generateTrainWith(rows: rows)
     }
 
-    
     
     //MARK: - Intents
     func select(seat: Seat) {
         self.selectedSeat = seat
     }
-    
     func switchDestination() {
         let tempStation = fromStation
         fromStation = toStation
@@ -36,9 +34,12 @@ class TrainViewModel: ObservableObject {
         let tempCity = fromCity
         fromCity = toCity
         toCity = tempCity
+        
+        selectedSeat = nil
     }
     
-    private func generateTrain(rows: Int) -> Train {
+    //MARK: - Private funcs
+    private func generateTrainWith(rows: Int) -> Train {
         var retvalRows = [Row]()
         for i in 0..<rows {
             retvalRows.append(generateRow(index: i))
