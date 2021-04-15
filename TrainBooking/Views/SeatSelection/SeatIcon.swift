@@ -12,7 +12,7 @@ struct SeatIcon: View{
     var seat: Seat
     
     var body: some View{
-        if viewModel.selectedSeat == seat {
+        if seat.selected {
             RoundedRectangle(cornerRadius: 5)
                 .stroke(Color.yellow)
                 .frame(width: 40, height: 40)

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TicketListView: View {
-    var seat : Seat
+    @EnvironmentObject var viewModel: TrainViewModel
     
     var body: some View {
         ZStack{
@@ -22,7 +22,7 @@ struct TicketListView: View {
                     HStack{
                         Text("Seat Place")
                         Spacer()
-                        Text("Exec 5 / Seat \(seat.rowNumber)\(seat.column)")
+                        Text("Exec 5 / Seat \(viewModel.selectedSeat!.rowNumber)\(viewModel.selectedSeat!.column)")
                     }
                 }.padding()
                 HStack{
@@ -61,6 +61,6 @@ struct TicketListView: View {
 
 struct TicketListView_Previews: PreviewProvider {
     static var previews: some View {
-        TicketListView(seat: Seat(rowNumber: 1, column: "A", empty: false))
+        TicketListView()
     }
 }

@@ -13,7 +13,7 @@ struct TicketView: View {
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
-                TicketListView(seat: viewModel.selectedSeat!)
+                TicketListView()
                 Text("Train Itenerary")
                     .font(.title)
                     .fontWeight(.bold)

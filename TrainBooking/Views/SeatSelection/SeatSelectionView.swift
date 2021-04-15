@@ -24,7 +24,7 @@ struct SeatSelectionView: View {
                 Spacer()
                 Text("C")
                 Text("D")
-                ForEach(viewModel.train!.rows, id: \.self) { row in
+                ForEach(viewModel.train!.rows) { row in
                     SeatIcon(seat: row.seats[0])
                         .onTapGesture{
                             if row.seats[0].empty {
@@ -57,7 +57,7 @@ struct SeatSelectionView: View {
                             }
                         }
                 }
-            }.frame(width: 250)
+            }
         }
         .padding()
         .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.white))

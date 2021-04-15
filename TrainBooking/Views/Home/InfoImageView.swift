@@ -36,6 +36,7 @@ struct InfoImageView: View {
                         Text("Learn more")
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
+                            .frame(height: 44)
                     })
                 }
             }

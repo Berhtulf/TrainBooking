@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Row : Identifiable, Hashable {
+struct Row : Identifiable {
     let id = UUID()
     let rowNumber: Int
     var seats : [Seat]

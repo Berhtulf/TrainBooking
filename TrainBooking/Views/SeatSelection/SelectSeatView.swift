@@ -14,7 +14,7 @@ struct SelectSeatView: View {
     var body: some View {
         VStack{
             LegendView()
-            
+            Spacer()
             HStack{
                 SeatSelectionView()
                 Spacer()
@@ -26,11 +26,11 @@ struct SelectSeatView: View {
                         .foregroundColor(.white)
                         .background(Capsule().foregroundColor(Color.init(#colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1))))
                     Image(systemName: "chevron.right")
-                }.rotationEffect(.init(degrees: 90))
+                }
                 .fixedSize()
-                .frame(width: 70, height: 180)
+                .rotationEffect(.init(degrees: 90))
+                .frame(width: 30, height: 180)
             }
-            .padding()
             if let selected = viewModel.selectedSeat {
                 VStack(spacing: 20){
                     HStack{
@@ -46,10 +46,10 @@ struct SelectSeatView: View {
                     }
                  NavigationLink("Continue", destination: TicketView())
                     .buttonStyle(PrimaryActionButtonStyle())
-                }.padding()
+                }
+                .padding()
                 .background(Color.white)
                 .cornerRadius(20)
-                .padding(.horizontal)
             }
         }
         .padding()

@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct Seat : Hashable {
+class Seat {
+    init(rowNumber: Int, column: String, empty: Bool, selected: Bool = false) {
+        self.column = column
+        self.rowNumber = rowNumber
+        self.empty = empty
+        self.selected = selected
+    }
+    
     let rowNumber: Int
     let column: String
     let empty: Bool

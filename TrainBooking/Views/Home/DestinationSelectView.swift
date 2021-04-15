@@ -15,7 +15,7 @@ struct DestinationSelectView: View {
             VStack(alignment: .leading){
                 Text("From")
                     .font(.headline)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.secondary)
                 Text(viewModel.fromStation)
                     .font(.title3)
                     .fontWeight(.semibold)
@@ -38,12 +38,13 @@ struct DestinationSelectView: View {
                         .background(Color.black)
                         .foregroundColor(.white)
                         .cornerRadius(20.0)
+                        .accessibility(label: Text("Switch destination"))
                 })
             }
             VStack(alignment: .leading){
                 Text("To")
                     .font(.headline)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.secondary)
                 Text(viewModel.toStation)
                     .font(.title3)
                     .fontWeight(.semibold)

@@ -12,6 +12,8 @@ struct LegendView: View {
         HStack{
             Spacer()
             Image(systemName: "squareshape.fill")
+                .resizable()
+                .scaledToFit()
                 .frame(width: 20, height: 20)
                 .foregroundColor(.yellow)
             Text("Available")

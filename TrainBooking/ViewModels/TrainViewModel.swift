@@ -24,7 +24,9 @@ class TrainViewModel: ObservableObject {
     
     //MARK: - Intents
     func select(seat: Seat) {
+        selectedSeat?.selected = false
         self.selectedSeat = seat
+        seat.selected.toggle()
     }
     func switchDestination() {
         let tempStation = fromStation
